@@ -1,46 +1,67 @@
 # E-Commerce Sales & Customer Analytics
 
-An interactive Power BI dashboard built to analyze e-commerce sales performance, customer satisfaction, product category revenue, payment preferences, and delivery performance using the Olist Brazilian E-Commerce dataset.
-
-## Tools & Technologies
-- **MySQL:** Data querying, joins, aggregation, and business analysis
-- **Power BI:** Interactive dashboard and KPI visualization
-- **DAX:** Calculated measures and KPI reporting, where applicable
-
-## Business Objectives
-- Track sales performance and order trends over time
-- Identify top-performing product categories
-- Analyze customer payment preferences
-- Understand customer review score distribution
-- Evaluate delivery performance and identify potential bottlenecks
+An end-to-end data analytics project exploring sales performance, product categories, customer satisfaction, payment preferences, and delivery performance using **MySQL and Power BI**.
 
 ## Dashboard Preview
-The repository's uploaded screenshot provides a preview of the dashboard.
 
-## Key Findings
-- Health & beauty was the leading category by revenue in the displayed analysis.
-- Credit cards accounted for the largest share of payment value.
-- Five-star reviews were the most common rating.
-- Approximately 8.13% of delivered orders were classified as delayed in the dashboard.
+![E-Commerce Sales & Customer Analytics Dashboard](screenshots/dashboard.png)
 
-## Dashboard Features
-- Sales, order volume, average order value, delivery, and review KPIs
-- Monthly revenue trend
-- Product category revenue comparison
-- Revenue by payment method
-- Customer satisfaction distribution
-- Order status breakdown
-- Delivery performance analysis
-- Purchase date range slicer
+## Business Objectives
+
+- Track monthly sales trends and overall order performance.
+- Identify top-performing product categories by revenue.
+- Understand customer payment preferences.
+- Evaluate customer satisfaction using review scores.
+- Analyse delivery performance and identify potential bottlenecks.
+
+## Tools & Technologies
+
+- **MySQL:** Data querying, aggregation, joins, and business analysis.
+- **Power BI Desktop:** Interactive dashboard development and visualisation.
+- **SQL:** Revenue analysis, category comparisons, payment analysis, and delivery performance.
+
+## Key Performance Indicators
+
+| KPI | Dashboard Result |
+|---|---:|
+| Total Sales | R$ 15.79M |
+| Total Orders | Approximately 99K |
+| Average Order Value | R$ 159.31 |
+| Late Delivery Rate | 8.13% |
+| Average Review Score | 4.09 / 5 |
+
+*These are the figures currently displayed on the dashboard; results depend on the selected date range and underlying calculations.*
+
+## Key Business Insights
+
+- **Category performance:** Health and beauty leads the displayed product-category revenue ranking.
+- **Payment behaviour:** Credit cards account for the largest share of payment value.
+- **Customer satisfaction:** Five-star reviews are the most frequent rating.
+- **Delivery performance:** Approximately 8.13% of delivered orders are classified as delayed on the dashboard, highlighting an area for further investigation.
+
+## Repository Structure
+
+```text
+ecommerce-sales-customer-analytics/
+├── screenshots/
+│   └── dashboard.png
+├── sql/
+│   └── ecommerce_analysis.sql
+└── README.md
+```
 
 ## Dataset
-Olist Brazilian E-Commerce Public Dataset  
-https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
-## Files
-- Dashboard screenshot: uploaded image in this repository
-- Power BI report: available separately if not included in this repository
-- SQL analysis: to be added
+This project uses the Brazilian E-Commerce Public Dataset by Olist, available on Kaggle.
 
-## Note
-Created as a portfolio project to demonstrate SQL analysis, dashboard design, and business insight generation.
+Dataset source: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+## How to Explore the Project
+
+1. Open `sql/ecommerce_analysis.sql` to review the SQL queries.
+2. View `screenshots/dashboard.png` to explore the dashboard preview.
+3. Use the dashboard KPIs and visualisations to understand the business questions explored.
+
+## Author
+
+**Anish Mayya**
